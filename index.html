@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HUA WEI INDUSTRIAL — SEO & GEO 官網健檢報告 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:   #0B1D3A;
+  --navy2:  #132847;
+  --red:    #D41B2C;
+  --red2:   #E8293A;
+  --blue:   #2563EB;
+  --alert:  #EF4444;
+  --green:  #10B981;
+  --warn:   #F59E0B;
+  --ink:    #1E293B;
+  --ink2:   #475569;
+  --ink3:   #94A3B8;
+  --bg:     #F0F4F8;
+  --card:   #FFFFFF;
+  --border: #E2E8F0;
+  --radius: 10px;
+  --shadow: 0 2px 12px rgba(11,29,58,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.6}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:var(--navy);border-bottom:2px solid var(--red);display:flex;align-items:center;padding:0 32px;height:54px;gap:0}
+.nav-logo{margin-right:32px;flex-shrink:0}
+.nav-logo a{display:flex;align-items:center;gap:8px;text-decoration:none}
+.nav-logo span{color:#fff;font-weight:700;font-size:13px;letter-spacing:.3px}
+.nav-links{display:flex;gap:4px;flex:1;overflow-x:auto}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:12px;font-weight:500;padding:6px 10px;border-radius:5px;white-space:nowrap;transition:background .15s,color .15s}
+.nav-links a:hover{background:rgba(255,255,255,.1);color:#fff}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#1a3560 60%,#0d2a52 100%);color:#fff;padding:72px 32px 64px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;right:0;width:55%;height:100%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Ccircle cx='500' cy='100' r='250' fill='%23D41B2C' fill-opacity='.06'/%3E%3Ccircle cx='400' cy='300' r='180' fill='%232563EB' fill-opacity='.05'/%3E%3C/svg%3E") no-repeat right center/cover;pointer-events:none}
+.hero-inner{max-width:1100px;margin:0 auto;position:relative}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(212,27,44,.18);border:1px solid rgba(212,27,44,.4);border-radius:20px;padding:4px 14px;font-size:11px;font-weight:600;letter-spacing:.8px;color:#f87171;margin-bottom:20px}
+.hero h1{font-size:clamp(26px,4vw,44px);font-weight:900;line-height:1.15;margin-bottom:16px;letter-spacing:-.5px}
+.hero h1 span{color:#f87171}
+.hero-sub{font-size:16px;color:rgba(255,255,255,.7);max-width:580px;margin-bottom:40px;line-height:1.7}
+.kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+.kpi-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:18px 20px;backdrop-filter:blur(4px)}
+.kpi-card .kpi-val{font-size:28px;font-weight:800;color:#fff;letter-spacing:-.5px}
+.kpi-card .kpi-val.warn{color:#fbbf24}
+.kpi-card .kpi-val.good{color:#34d399}
+.kpi-card .kpi-label{font-size:11px;color:rgba(255,255,255,.55);font-weight:500;letter-spacing:.4px;margin-top:4px}
+.kpi-card .kpi-src{font-size:10px;color:rgba(255,255,255,.3);margin-top:2px}
+
+/* MAIN */
+.main{max-width:1100px;margin:0 auto;padding:40px 24px 80px}
+.section{margin-bottom:48px}
+.section-header{display:flex;align-items:baseline;gap:12px;margin-bottom:24px}
+.section-header h2{font-size:20px;font-weight:800;color:var(--navy);letter-spacing:-.3px}
+.src-tag{font-size:10px;font-weight:700;letter-spacing:.8px;color:var(--ink3);background:var(--bg);border:1px solid var(--border);border-radius:4px;padding:2px 7px}
+
+/* CARDS GRID */
+.cards-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:900px){.cards-5{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:540px){.cards-5{grid-template-columns:repeat(2,1fr)}}
+.metric-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;border-top:3px solid var(--navy)}
+.metric-card.red-top{border-top-color:var(--red)}
+.metric-card.blue-top{border-top-color:var(--blue)}
+.metric-card .m-val{font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-.5px}
+.metric-card .m-label{font-size:12px;color:var(--ink2);font-weight:500;margin-top:6px}
+.metric-card .m-sub{font-size:11px;color:var(--ink3);margin-top:3px}
+
+/* CALLOUTS */
+.callout{border-radius:var(--radius);padding:16px 20px;margin-bottom:16px;border-left:4px solid;font-size:13.5px;line-height:1.65}
+.callout-red{background:#fff5f5;border-color:var(--alert);color:#7f1d1d}
+.callout-warn{background:#fffbeb;border-color:var(--warn);color:#78350f}
+.callout-blue{background:#eff6ff;border-color:var(--blue);color:#1e3a8a}
+.callout-green{background:#ecfdf5;border-color:var(--green);color:#064e3b}
+.callout-gray{background:#f8fafc;border-color:#cbd5e1;color:var(--ink2)}
+.callout strong{font-weight:700}
+
+/* CHART */
+.chart-wrap{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;position:relative}
+canvas{width:100%!important}
+
+/* TABLES */
+.table-wrap{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.table-wrap table{width:100%;border-collapse:collapse;font-size:13px}
+.table-wrap th{background:var(--navy);color:#fff;font-weight:600;padding:11px 14px;text-align:left;font-size:11px;letter-spacing:.4px}
+.table-wrap td{padding:11px 14px;border-bottom:1px solid var(--border);vertical-align:middle}
+.table-wrap tr:last-child td{border-bottom:none}
+.table-wrap tr:hover td{background:#f8fafc}
+.badge{display:inline-block;padding:2px 8px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.3px}
+.badge-top1{background:#dcfce7;color:#14532d}
+.badge-top3{background:#dbeafe;color:#1e3a8a}
+.badge-top10{background:#fef9c3;color:#713f12}
+.badge-en{background:#eff6ff;color:#1d4ed8}
+.badge-tw{background:#fff1f2;color:#9f1239}
+.badge-es{background:#fef3c7;color:#92400e}
+.badge-ru{background:#f5f3ff;color:#4c1d95}
+.badge-ar{background:#ecfdf5;color:#064e3b}
+.badge-warn{background:#fee2e2;color:#7f1d1d}
+.badge-ok{background:#d1fae5;color:#064e3b}
+.pos-bar{display:inline-block;height:6px;border-radius:3px;background:var(--blue);vertical-align:middle;min-width:4px}
+
+/* TWO COL */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:680px){.two-col{grid-template-columns:1fr}}
+
+/* COMPETITOR CARDS */
+.comp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:760px){.comp-cards{grid-template-columns:1fr}}
+.comp-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;border:2px solid var(--border)}
+.comp-card.ours{border-color:var(--red);background:#fff8f8}
+.comp-card .comp-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:12px}
+.comp-card .comp-name small{display:block;font-size:10px;color:var(--ink3);font-weight:400;margin-top:2px}
+.comp-metric{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:12px}
+.comp-metric:last-child{border-bottom:none}
+.comp-metric .label{color:var(--ink2)}
+.comp-metric .val{font-weight:700;color:var(--navy)}
+.comp-bar-wrap{margin-top:12px}
+.comp-bar-label{font-size:10px;color:var(--ink3);margin-bottom:4px}
+.comp-bar{height:8px;border-radius:4px;background:var(--border)}
+.comp-bar-fill{height:8px;border-radius:4px}
+
+/* AI SECTION */
+.ai-three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+@media(max-width:600px){.ai-three{grid-template-columns:1fr}}
+.ai-big-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;text-align:center}
+.ai-big-card .ai-num{font-size:40px;font-weight:900;letter-spacing:-1px}
+.ai-big-card .ai-domain{font-size:12px;font-weight:600;color:var(--ink2);margin-top:6px}
+.ai-big-card.ours .ai-num{color:var(--red)}
+.ai-big-card.c1 .ai-num{color:var(--blue)}
+.ai-big-card.c2 .ai-num{color:var(--ink3)}
+
+/* HEALTH CHECK */
+.hc-list{display:flex;flex-direction:column;gap:12px}
+.hc-item{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;display:grid;grid-template-columns:32px 1fr;gap:14px;align-items:start}
+.hc-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.hc-icon.red{background:#fee2e2}
+.hc-icon.yellow{background:#fef3c7}
+.hc-icon.green{background:#d1fae5}
+.hc-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px}
+.hc-desc{font-size:13px;color:var(--ink2);line-height:1.65}
+.hc-desc code{background:#f1f5f9;color:var(--red);font-size:11px;padding:1px 5px;border-radius:3px;font-family:monospace}
+
+/* REFDOMAINS TABLE */
+.spam-label{font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px}
+.spam-ok{background:#d1fae5;color:#065f46}
+.spam-warn{background:#fee2e2;color:#7f1d1d}
+.spam-mid{background:#fef3c7;color:#78350f}
+
+/* GEO MAP */
+.geo-bars{display:flex;flex-direction:column;gap:10px}
+.geo-row{display:grid;grid-template-columns:120px 1fr 70px;align-items:center;gap:12px;font-size:13px}
+.geo-country{font-weight:600;color:var(--ink)}
+.geo-bar-bg{background:var(--border);border-radius:4px;height:10px;overflow:hidden}
+.geo-bar-fill{height:10px;border-radius:4px}
+.geo-pct{font-weight:700;color:var(--navy);text-align:right}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,.6);text-align:center;padding:32px 24px;font-size:12px;line-height:2}
+footer strong{color:#fff;font-weight:600}
+footer a{color:rgba(255,255,255,.6)}
+
+/* DIVIDER */
+.divider{border:none;border-top:1px solid var(--border);margin:40px 0}
+
+/* SECTION LABEL */
+.section-num{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border-radius:6px;background:var(--red);color:#fff;font-size:11px;font-weight:800;margin-right:8px;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="https://www.pufe.com.tw/index.html" target="_blank">
+      <div style="background:#fff;border-radius:5px;padding:3px 8px;display:flex;align-items:center;gap:6px">
+        <div style="width:18px;height:18px;background:var(--red);border-radius:3px;display:flex;align-items:center;justify-content:center">
+          <span style="color:#fff;font-size:10px;font-weight:900">P</span>
+        </div>
+        <span style="color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.3px">普飛行銷</span>
+      </div>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="#ch01">SEO 指標</a>
+    <a href="#ch02">流量趨勢</a>
+    <a href="#ch03">關鍵字</a>
+    <a href="#ch04">Top Pages</a>
+    <a href="#ch05">AI 引用</a>
+    <a href="#ch06">外鏈品質</a>
+    <a href="#ch07">競品比較</a>
+    <a href="#ch08">地理市場</a>
+    <a href="#ch09">官網健檢</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">SEO & GEO 官網健檢報告 · 2026.06</div>
+    <h1>每月 5,100 次流量，<br><span>背後藏著 14 倍的差距</span></h1>
+    <p class="hero-sub">華偉工業擁有 50 年製造實力、12 語言官網、完整認證體系——但核心英文產品頁幾乎在 Google 上缺席。本報告用 Ahrefs 數據說明現況，並找出最有效的改善切入點。</p>
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-val">5,109</div>
+        <div class="kpi-label">月自然流量</div>
+        <div class="kpi-src">Ahrefs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">1,124</div>
+        <div class="kpi-label">自然關鍵字數</div>
+        <div class="kpi-src">Ahrefs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val warn">624</div>
+        <div class="kpi-label">Top 1–3 排名詞數</div>
+        <div class="kpi-src">Ahrefs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val">1,034</div>
+        <div class="kpi-label">現有外部連結數</div>
+        <div class="kpi-src">Ahrefs</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-val warn">21</div>
+        <div class="kpi-label">DR 網域評分</div>
+        <div class="kpi-src">Ahrefs</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- CH01 SEO 核心指標 -->
+  <div class="section" id="ch01">
+    <div class="section-header">
+      <h2><span class="section-num">1</span>SEO 核心指標</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="cards-5">
+      <div class="metric-card blue-top">
+        <div class="m-val">5,109</div>
+        <div class="m-label">月自然流量</div>
+        <div class="m-sub">2026 年 6 月</div>
+      </div>
+      <div class="metric-card blue-top">
+        <div class="m-val">1,124</div>
+        <div class="m-label">自然關鍵字總數</div>
+        <div class="m-sub">全球所有市場</div>
+      </div>
+      <div class="metric-card red-top">
+        <div class="m-val">624</div>
+        <div class="m-label">Top 1–3 排名詞</div>
+        <div class="m-sub">高可見度關鍵字</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-val">1,034</div>
+        <div class="m-label">現有外部連結</div>
+        <div class="m-sub">303 個引用網域</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-val">303</div>
+        <div class="m-label">引用網域數</div>
+        <div class="m-sub">目前有效連結來源</div>
+      </div>
+    </div>
+    <div style="margin-top:16px">
+      <div class="callout callout-blue">
+        <strong>數據解讀：</strong>月流量 5,109 看似可觀，但其中約 28% 來自台灣（繁中品牌搜尋），真正來自全球採購商搜尋的英文自然流量估計僅佔 20–25%。對一家服務 25 個以上國家的 B2B 製造商而言，英文 SEO 的效益仍相當有限。
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH02 流量趨勢 -->
+  <div class="section" id="ch02">
+    <div class="section-header">
+      <h2><span class="section-num">2</span>流量歷史趨勢（最近 24 個月）</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="chart-wrap">
+      <canvas id="trafficChart" height="260"></canvas>
+    </div>
+    <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="callout callout-warn">
+        <strong>⚠ 長期高原期：</strong>自 2024 年 6 月起，月流量長達 20 個月徘徊在 2,400–2,970 之間，沒有明顯突破，代表現有內容策略已趨於飽和，需要新的成長動力。
+      </div>
+      <div class="callout callout-blue">
+        <strong>📈 2026 年 6 月跳升：</strong>流量從 4 月的 1,847 快速回升至 6 月的 4,974，可能與 Google 演算法更新或付費廣告有關，建議確認原因以判斷是否可持續。
+      </div>
+    </div>
+    <div class="callout callout-gray" style="margin-top:4px">
+      <strong>數據說明：</strong>流量數值為 Ahrefs 每月估算值，可能與 Google Search Console 實際點擊數有所差異。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH03 關鍵字排名分析 -->
+  <div class="section" id="ch03">
+    <div class="section-header">
+      <h2><span class="section-num">3</span>關鍵字排名分析（Top 20 / 按流量貢獻排序）</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="callout callout-warn" style="margin-bottom:16px">
+      <strong>⚠ 英文核心產品詞幾乎缺席：</strong>「cable ties」（月搜尋 6,000）、「nylon cable ties」（2,000）等主力產品詞在排名前 20 中完全不見。目前流量由分散的長尾詞和多語言詞撐起，整體流量結構較脆弱。
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>關鍵字</th>
+            <th>語言</th>
+            <th>排名</th>
+            <th>月搜尋量</th>
+            <th>流量貢獻</th>
+            <th>難度 KD</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>ul規格</td><td><span class="badge badge-tw">繁中</span></td><td><span class="badge badge-top1">1</span></td><td>40</td><td>37</td><td>0</td></tr>
+          <tr><td>2</td><td>bridas plasticas</td><td><span class="badge badge-es">西文</span></td><td><span class="badge badge-top1">1</span></td><td>700</td><td>29</td><td>0</td></tr>
+          <tr><td>3</td><td>junction box wiring</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top3">3</span></td><td>350</td><td>27</td><td>2</td></tr>
+          <tr><td>4</td><td>conector de cables</td><td><span class="badge badge-es">西文</span></td><td><span class="badge badge-top1">1</span></td><td>200</td><td>17</td><td>0</td></tr>
+          <tr><td>5</td><td>abrazaderas de plastico</td><td><span class="badge badge-es">西文</span></td><td><span class="badge badge-top1">1</span></td><td>600</td><td>17</td><td>0</td></tr>
+          <tr><td>6</td><td>junction box wiring guidelines</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top3">3</span></td><td>200</td><td>15</td><td>3</td></tr>
+          <tr><td>7</td><td>junction box electrical wiring</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">5</span></td><td>150</td><td>14</td><td>0</td></tr>
+          <tr><td>8</td><td>wire management clips</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">7</span></td><td>500</td><td>14</td><td>0</td></tr>
+          <tr><td>9</td><td>electrical junction box rules</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">4</span></td><td>150</td><td>12</td><td>1</td></tr>
+          <tr><td>10</td><td>conectores para cables</td><td><span class="badge badge-es">西文</span></td><td><span class="badge badge-top3">2</span></td><td>150</td><td>10</td><td>0</td></tr>
+          <tr><td>11</td><td>how to wire a junction box</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top3">2</span></td><td>200</td><td>10</td><td>0</td></tr>
+          <tr><td>12</td><td>wire holder clamp</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">7</span></td><td>150</td><td>9</td><td>0</td></tr>
+          <tr><td>13</td><td>plastic wire clips</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top3">2</span></td><td>200</td><td>8</td><td>0</td></tr>
+          <tr><td>14</td><td>marine certification</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top1">1</span></td><td>60</td><td>8</td><td>4</td></tr>
+          <tr><td>15</td><td>brida plastica</td><td><span class="badge badge-es">西文</span></td><td><span class="badge badge-top1">1</span></td><td>60</td><td>7</td><td>0</td></tr>
+          <tr><td>16</td><td>wire management clips</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">7</span></td><td>500</td><td>7</td><td>0</td></tr>
+          <tr><td>17</td><td>types of cable clamps</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top1">1</span></td><td>60</td><td>6</td><td>0</td></tr>
+          <tr><td>18</td><td>plastic cable clamps</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">7</span></td><td>100</td><td>6</td><td>0</td></tr>
+          <tr><td>19</td><td>how to wire junction box</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top10">5</span></td><td>70</td><td>6</td><td>0</td></tr>
+          <tr><td>20</td><td>junction box assembly</td><td><span class="badge badge-en">英文</span></td><td><span class="badge badge-top3">3</span></td><td>40</td><td>6</td><td>0</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout callout-blue" style="margin-top:14px">
+      <strong>機會缺口：</strong>「nylon cable ties」（月搜尋 2,000，KD 4）、「cable clips」（3,600，KD 0）、「stainless steel cable ties」（700，KD 0）——這三個詞的搜尋難度極低，卻幾乎沒有出現在前 20 大流量關鍵字中，是最直接的優化切入點。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH04 TOP PAGES -->
+  <div class="section" id="ch04">
+    <div class="section-header">
+      <h2><span class="section-num">4</span>Top Pages 流量結構（前 10 頁）</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>頁面（URL 簡寫）</th>
+            <th>語言</th>
+            <th>月流量</th>
+            <th>最佳關鍵字</th>
+            <th>排名</th>
+            <th>關鍵字搜尋量</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>/en/category/Cable_Clips_Clamps</td><td><span class="badge badge-en">英文</span></td><td>545</td><td>cable clips</td><td><span class="badge badge-top3">2</span></td><td>100</td></tr>
+          <tr><td>2</td><td>/zh-TW/category/Plastic_Cable_Ties</td><td><span class="badge badge-tw">繁中</span></td><td>457</td><td>束帶</td><td><span class="badge badge-top3">3</span></td><td>4,100</td></tr>
+          <tr><td>3</td><td>/zh-TW/category/Stainless_Steel_Ties</td><td><span class="badge badge-tw">繁中</span></td><td>316</td><td>不鏽鋼束帶</td><td><span class="badge badge-top1">1</span></td><td>200</td></tr>
+          <tr><td>4</td><td>/ru/technical-certification/ukca</td><td><span class="badge badge-ru">俄文</span></td><td>253</td><td>ukca</td><td><span class="badge badge-top3">2</span></td><td>150</td></tr>
+          <tr><td>5</td><td>/zh-TW/index</td><td><span class="badge badge-tw">繁中</span></td><td>227</td><td>華偉</td><td><span class="badge badge-top3">2</span></td><td>400</td></tr>
+          <tr><td>6</td><td>/es/category/Wire_connectors</td><td><span class="badge badge-es">西文</span></td><td>199</td><td>conector de cables</td><td><span class="badge badge-top10">7</span></td><td>200</td></tr>
+          <tr><td>7</td><td>/en/technical-info/tech-junction_box</td><td><span class="badge badge-en">英文</span></td><td>177</td><td>junction box wiring</td><td><span class="badge badge-top3">3</span></td><td>350</td></tr>
+          <tr><td>8</td><td>/ar/technical-certification/ukca</td><td><span class="badge badge-ar">阿文</span></td><td>177</td><td>ukca</td><td><span class="badge badge-top3">2</span></td><td>90</td></tr>
+          <tr><td>9</td><td>/es/manual-info/manual-plastic_cable_tie</td><td><span class="badge badge-es">西文</span></td><td>173</td><td>bridas plasticas</td><td><span class="badge badge-top10">11</span></td><td>700</td></tr>
+          <tr><td>10</td><td>/es/category/Terminals</td><td><span class="badge badge-es">西文</span></td><td>149</td><td>terminales</td><td><span class="badge badge-top1">1</span></td><td>3,600</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="callout callout-warn">
+        <strong>⚠ 英文產品主頁完全不在榜：</strong>代表 Cable Ties 這個最核心的英文產品類別頁，目前在 Google 上幾乎沒有流量，採購商搜尋「cable ties manufacturer」時找不到華偉。
+      </div>
+      <div class="callout callout-green">
+        <strong>✅ 技術文章有效：</strong>Junction Box 技術文（#7，177/月）證明深度內容對這個產業有吸引力，是值得持續發展的內容方向。
+      </div>
+    </div>
+    <div class="callout callout-blue" style="margin-top:4px">
+      <strong>語言分布（前 10 頁流量加總）：</strong>繁中 1,000 次（40%）、英文 722 次（29%）、西文 521 次（21%）、俄文 253 次（10%）。英文頁面流量佔比偏低，考量英文是全球 B2B 採購的主要語言，仍有顯著提升空間。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH05 AI 引用 -->
+  <div class="section" id="ch05">
+    <div class="section-header">
+      <h2><span class="section-num">5</span>AI 引用現況</h2>
+      <span class="src-tag">Ahrefs 概述頁截圖</span>
+    </div>
+    <div class="callout callout-blue" style="margin-bottom:20px">
+      <strong>什麼是「AI 引用」？</strong>當採購商在 ChatGPT、Google AI Overview、Perplexity 等 AI 工具問「哪裡買 cable ties」或「推薦 cable tie 製造商」，AI 會引用特定網站的內容來回答。被引用次數越多，代表品牌在 AI 搜尋時代的能見度越高。
+    </div>
+    <div style="background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;margin-bottom:16px">
+      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:16px">hwlok.com 各平台 AI 引用次數（來源：Ahrefs 概述頁截圖）</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px">
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">89</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">AI Overviews<br><span style="font-weight:400;color:var(--ink3)">Google</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">83</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">AI 模式<br><span style="font-weight:400;color:var(--ink3)">Google</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">138</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">AIO<br><span style="font-weight:400;color:var(--ink3)">搜尋查詢</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">123</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">Grok<br><span style="font-weight:400;color:var(--ink3)">xAI</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">34</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">ChatGPT<br><span style="font-weight:400;color:var(--ink3)">OpenAI</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">28</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">Perplexity<br><span style="font-weight:400;color:var(--ink3)"></span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">11</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">Copilot<br><span style="font-weight:400;color:var(--ink3)">Microsoft</span></div>
+        </div>
+        <div style="text-align:center;padding:16px 10px;background:#f8fafc;border-radius:8px">
+          <div style="font-size:28px;font-weight:900;color:var(--navy)">2</div>
+          <div style="font-size:11px;color:var(--ink2);margin-top:4px;font-weight:600">Gemini<br><span style="font-weight:400;color:var(--ink3)">Google</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout-blue">
+      <strong>解讀：</strong>Grok（123）與 AIO（138）數字顯示華偉在部分 AI 工具中已有一定存在感，Google AI Overviews（89）的引用基礎也算穩固。AI 引用次數主要反映網站有多少被 AI 認可的有用內容——提升英文深度內容是提高各平台引用的最直接方法，而非針對特定平台做技術調整。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH06 外鏈品質 -->
+  <div class="section" id="ch06">
+    <div class="section-header">
+      <h2><span class="section-num">6</span>外鏈品質分析（前 10 大引用網域 / 按 DR 排序）</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="callout callout-blue" style="margin-bottom:16px">
+      <strong>什麼是外部連結？</strong>其他網站連到華偉官網的連結，是 Google 評估「這個網站值得信任嗎」的重要依據。DR（Domain Rating）越高，代表這條連結越有份量。
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>引用網域</th>
+            <th>DR 評分</th>
+            <th>Dofollow 連結數</th>
+            <th>總連結數</th>
+            <th>性質評估</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>blogspot.com</strong></td>
+            <td>95</td>
+            <td>56</td>
+            <td>56</td>
+            <td><span class="spam-label spam-warn">⚠ 疑似 SEO 農場</span></td>
+          </tr>
+          <tr>
+            <td><strong>amazonaws.com</strong></td>
+            <td>95</td>
+            <td>16</td>
+            <td>16</td>
+            <td><span class="spam-label spam-mid">雲端主機（中性）</span></td>
+          </tr>
+          <tr>
+            <td><strong>pages.dev</strong></td>
+            <td>93</td>
+            <td>0</td>
+            <td>1</td>
+            <td><span class="spam-label spam-mid">Nofollow（不計分）</span></td>
+          </tr>
+          <tr>
+            <td><strong>mdpi.com</strong></td>
+            <td>92</td>
+            <td>1</td>
+            <td>1</td>
+            <td><span class="spam-label spam-ok">✅ 學術期刊（優質）</span></td>
+          </tr>
+          <tr>
+            <td><strong>1688.com</strong></td>
+            <td>92</td>
+            <td>28</td>
+            <td>28</td>
+            <td><span class="spam-label spam-mid">阿里旗下 B2B 平台</span></td>
+          </tr>
+          <tr>
+            <td><strong>crunchbase.com</strong></td>
+            <td>91</td>
+            <td>0</td>
+            <td>2</td>
+            <td><span class="spam-label spam-mid">Nofollow（不計分）</span></td>
+          </tr>
+          <tr>
+            <td><strong>za.com</strong></td>
+            <td>90</td>
+            <td>0</td>
+            <td>6</td>
+            <td><span class="spam-label spam-mid">Nofollow（不計分）</span></td>
+          </tr>
+          <tr>
+            <td><strong>messefrankfurt.com</strong></td>
+            <td>89</td>
+            <td>16</td>
+            <td>19</td>
+            <td><span class="spam-label spam-ok">✅ 法蘭克福展覽會（優質）</span></td>
+          </tr>
+          <tr>
+            <td><strong>104.com.tw</strong></td>
+            <td>89</td>
+            <td>199</td>
+            <td>202</td>
+            <td><span class="spam-label spam-mid">人力銀行（非產業關聯）</span></td>
+          </tr>
+          <tr>
+            <td><strong>com.ru</strong></td>
+            <td>87</td>
+            <td>7</td>
+            <td>40</td>
+            <td><span class="spam-label spam-warn">⚠ 俄文目錄型網站</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div class="callout callout-warn">
+        <strong>⚠ 外鏈品質參差：</strong>前 10 大引用網域中，真正有 SEO 加分效果的高品質 Dofollow 連結僅有 mdpi.com（1）與 messefrankfurt.com（16）兩個，blogspot.com 的 56 條 Dofollow 連結疑似來自部落格農場。
+      </div>
+      <div class="callout callout-green">
+        <strong>✅ 展覽曝光有效轉換：</strong>法蘭克福展覽會（DR 89）貢獻 16 條 Dofollow 連結，是目前最有品質的外部連結來源，說明實體展覽帶來的數位曝光具有 SEO 價值。
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH07 競品比較 -->
+  <div class="section" id="ch07">
+    <div class="section-header">
+      <h2><span class="section-num">7</span>競品 SEO 對比</h2>
+      <span class="src-tag">Ahrefs</span>
+    </div>
+    <div class="callout callout-blue" style="margin-bottom:20px">
+      以下競品為 Ahrefs 自動偵測與 hwlok.com 共同排名關鍵字最多的同類網站，代表全球採購商在搜尋相同產品時，最常同時看到這些網站與華偉。
+    </div>
+    <div class="comp-cards">
+      <!-- 華偉 -->
+      <div class="comp-card ours">
+        <div class="comp-name">hwlok.com <small>HUA WEI INDUSTRIAL — 台灣製造商</small></div>
+        <div class="comp-metric"><span class="label">月自然流量</span><span class="val" style="color:var(--red)">5,109</span></div>
+        <div class="comp-metric"><span class="label">自然關鍵字</span><span class="val">1,124</span></div>
+        <div class="comp-metric"><span class="label">Top 1–3 詞數</span><span class="val">624</span></div>
+        <div class="comp-metric"><span class="label">有流量頁面數</span><span class="val">~25 頁</span></div>
+        <div class="comp-bar-wrap">
+          <div class="comp-bar-label">流量規模（相對比較）</div>
+          <div class="comp-bar"><div class="comp-bar-fill" style="width:7%;background:var(--red)"></div></div>
+        </div>
+      </div>
+      <!-- cabletiesandmore -->
+      <div class="comp-card">
+        <div class="comp-name">cabletiesandmore.com <small>美國電商 — 同產業直接競品</small></div>
+        <div class="comp-metric"><span class="label">月自然流量</span><span class="val">16,492</span></div>
+        <div class="comp-metric"><span class="label">自然關鍵字</span><span class="val">4,855</span></div>
+        <div class="comp-metric"><span class="label">Top 1–3 詞數</span><span class="val">1,471</span></div>
+        <div class="comp-metric"><span class="label">有流量頁面數</span><span class="val">&gt;190 頁</span></div>
+        <div class="comp-bar-wrap">
+          <div class="comp-bar-label">流量規模（相對比較）</div>
+          <div class="comp-bar"><div class="comp-bar-fill" style="width:23%;background:var(--blue)"></div></div>
+        </div>
+      </div>
+      <!-- essentracomponents -->
+      <div class="comp-card">
+        <div class="comp-name">essentracomponents.com <small>英國工業零件電商 — 最強競品</small></div>
+        <div class="comp-metric"><span class="label">月自然流量</span><span class="val">72,692</span></div>
+        <div class="comp-metric"><span class="label">自然關鍵字</span><span class="val">12,657</span></div>
+        <div class="comp-metric"><span class="label">Top 1–3 詞數</span><span class="val">4,906</span></div>
+        <div class="comp-metric"><span class="label">有流量頁面數</span><span class="val">&gt;180 頁</span></div>
+        <div class="comp-bar-wrap">
+          <div class="comp-bar-label">流量規模（相對比較）</div>
+          <div class="comp-bar"><div class="comp-bar-fill" style="width:100%;background:#94a3b8)"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="callout callout-warn" style="margin-top:16px">
+      <strong>核心差距：</strong>essentracomponents.com 月流量是華偉的 <strong>14.2 倍</strong>，主要差距來自兩點：①他們有超過 180 篇深度技術文章（每篇月流量 100–2,500），②全站多語言內容完整、各語言都有獨立 SEO 佈局。反觀華偉的技術文章目前只有 Junction Box 這一篇有顯著流量。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH08 地理市場 -->
+  <div class="section" id="ch08">
+    <div class="section-header">
+      <h2><span class="section-num">8</span>地理市場分析</h2>
+      <span class="src-tag">Ahrefs 概述頁截圖</span>
+    </div>
+    <div class="two-col">
+      <div>
+        <div style="background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px">
+          <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:18px">前五大流量來源國</div>
+          <div class="geo-bars">
+            <div class="geo-row">
+              <div class="geo-country">🇹🇼 台灣</div>
+              <div class="geo-bar-bg"><div class="geo-bar-fill" style="width:100%;background:var(--red)"></div></div>
+              <div class="geo-pct">28.3%</div>
+            </div>
+            <div class="geo-row">
+              <div class="geo-country">🇺🇸 美國</div>
+              <div class="geo-bar-bg"><div class="geo-bar-fill" style="width:41%;background:var(--blue)"></div></div>
+              <div class="geo-pct">11.6%</div>
+            </div>
+            <div class="geo-row">
+              <div class="geo-country">🇷🇺 俄羅斯</div>
+              <div class="geo-bar-bg"><div class="geo-bar-fill" style="width:27%;background:var(--blue)"></div></div>
+              <div class="geo-pct">7.7%</div>
+            </div>
+            <div class="geo-row">
+              <div class="geo-country">🇲🇽 墨西哥</div>
+              <div class="geo-bar-bg"><div class="geo-bar-fill" style="width:23%;background:var(--green)"></div></div>
+              <div class="geo-pct">6.5%</div>
+            </div>
+            <div class="geo-row">
+              <div class="geo-country">🇮🇳 印度</div>
+              <div class="geo-bar-bg"><div class="geo-bar-fill" style="width:17%;background:var(--green)"></div></div>
+              <div class="geo-pct">4.7%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="callout callout-warn" style="height:100%">
+          <strong>⚠ 台灣流量佔比過高（28.3%）：</strong><br><br>
+          對一家服務全球市場的 B2B 製造商而言，理想狀態是台灣本地流量應低於 10%，主力流量來自美國、歐洲、東南亞等採購市場。目前台灣流量佔近三成，說明整體 SEO 仍以品牌搜尋為主，並非由產品搜尋驅動的國際採購流量。<br><br>
+          <strong>機會：</strong>墨西哥（6.5%）來自西班牙文 SEO 自然產生，印度（4.7%）代表新興市場機會，這兩個市場都值得加強對應語言的產品內容。
+        </div>
+      </div>
+    </div>
+    <div class="callout callout-blue" style="margin-top:14px">
+      <strong>搜尋意圖分析（來源：截圖）：</strong>品牌詞（131 個關鍵字，952 次流量）vs 非品牌詞（1K 個關鍵字，4,200 次流量）。非品牌詞流量占比較高是好現象，但品牌詞搜尋量下降（-683 個關鍵字）值得關注，代表自然品牌曝光在減少。
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CH09 官網健檢 -->
+  <div class="section" id="ch09">
+    <div class="section-header">
+      <h2><span class="section-num">9</span>官網 SEO 健檢</h2>
+      <span class="src-tag">網站爬取分析</span>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#991b1b"><div style="width:12px;height:12px;border-radius:3px;background:#fee2e2;border:1px solid #fca5a5"></div>需要修正（影響搜尋排名）</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#92400e"><div style="width:12px;height:12px;border-radius:3px;background:#fef3c7;border:1px solid #fcd34d"></div>建議改善（提升流量機會）</div>
+      <div style="display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:#064e3b"><div style="width:12px;height:12px;border-radius:3px;background:#d1fae5;border:1px solid #6ee7b7"></div>現況不錯</div>
+    </div>
+    <div class="hc-list">
+
+      <!-- 1 -->
+      <div class="hc-item">
+        <div class="hc-icon red">🔴</div>
+        <div>
+          <div class="hc-title">首頁 H1 標題沒有傳達產品資訊</div>
+          <div class="hc-desc">首頁目前的 H1 標題是 <code>Hua Wei - A professional manufacturer of wire and cable management products | HUA WEI INDUSTRIAL CO., LTD.</code>——這其實是 Title Tag 的複製貼上，不是真正給 Google 看的頁面主標題。<br><br>H1 應該直接說明這個頁面提供什麼，例如：<strong>Cable Ties & Wire Management Solutions | Industrial Manufacturer</strong>。這個修改成本低、效果直接，是優先度最高的調整。</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="hc-item">
+        <div class="hc-icon red">🔴</div>
+        <div>
+          <div class="hc-title">Company Profile 頁面 H1 與 Title Tag 完全相同</div>
+          <div class="hc-desc">公司介紹頁的 H1 是 <code>Company Profile | Taiwan Heavy Duty Cable Ties Manufacturer | HUA WEI</code>，與 Title Tag 一模一樣。<br><br>這會讓 Google 認為這個頁面沒有獨立的內容架構。建議 H1 改為訪客導向的標題，例如：<strong>50 Years of Cable Tie Manufacturing — Who We Are</strong>，讓 Title Tag 做 SEO 排名，H1 做訪客溝通。</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="hc-item">
+        <div class="hc-icon red">🔴</div>
+        <div>
+          <div class="hc-title">產品分類頁底部的大量關鍵字堆疊</div>
+          <div class="hc-desc">在 Plastic Cable Ties、Company Profile 等多個頁面最底部，有超過 30 個關鍵字超連結清單（Cable Tie、Tube Ties、Stainless Steel Cable Tie……），這是 2010 年代常見的舊式 SEO 技巧。<br><br>現在 Google 會將此視為低品質內容訊號，可能拉低頁面整體評分。建議移除或改為語意自然的段落文字。</div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="hc-item">
+        <div class="hc-icon red">🔴</div>
+        <div>
+          <div class="hc-title">og:type 全站設定為 "website"（Schema 類型錯誤）</div>
+          <div class="hc-desc">網站全部頁面的 og:type 都設定為 <code>website</code>，包含產品分類頁和技術文章頁。<br><br>正確的設定應是：產品頁用 <code>product</code>、技術文章用 <code>article</code>。這影響 AI 工具（如 Google AI Overview、ChatGPT）辨識華偉內容的類型——type 設錯可能導致 AI 引用時無法正確歸類為「製造商」或「技術資訊來源」。</div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="hc-item">
+        <div class="hc-icon red">🔴</div>
+        <div>
+          <div class="hc-title">導覽列有錯字：Conduits and Fitttings（多了一個 t）</div>
+          <div class="hc-desc">全站導覽列中的 <code>Conduits and Fitttings</code> 多打了一個 t，正確英文應為 <strong>Conduits and Fittings</strong>。<br><br>這個錯字出現在每一頁的選單，當採購商搜尋 "conduit fittings" 時，拼字錯誤的 URL 和錨點文字不會被 Google 識別為正確的關鍵字，同時也影響品牌的專業形象。</div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="hc-item">
+        <div class="hc-icon" style="background:#fef3c7">🟡</div>
+        <div>
+          <div class="hc-title">英文首頁缺乏可索引的文字內容</div>
+          <div class="hc-desc">訪客進入英文首頁，只看到 Banner 輪播圖和「Welcome to Hua Wei」，沒有任何段落文字說明品牌、產品、或為什麼選擇華偉。<br><br>競品 essentracomponents.com 首頁有清楚的文字說明，每個產品類別都有描述段落，這是它英文 SEO 遠勝華偉的關鍵原因之一。建議在首頁加入 200–300 字的品牌介紹文字，涵蓋核心產品詞（cable ties、wire management、stainless steel ties）。</div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="hc-item">
+        <div class="hc-icon" style="background:#fef3c7">🟡</div>
+        <div>
+          <div class="hc-title">繁中「束帶」頁面排名第 3（月搜尋 4,100）但內文太簡短</div>
+          <div class="hc-desc">繁體中文 Plastic Cable Ties 分類頁目前排名第 3，這個關鍵字每月有 4,100 次搜尋，是非常有價值的位置。<br><br>但目前頁面只有一張圖和幾行說明文字，沒有充分發揮排名第 3 的流量潛力。若將內文加深至 300 字以上（材質說明、規格、應用場景），有機會提升至第 1–2 名，帶來更多流量。</div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="hc-item">
+        <div class="hc-icon" style="background:#fef3c7">🟡</div>
+        <div>
+          <div class="hc-title">Junction Box 技術文成功，但後續沒有延伸文章</div>
+          <div class="hc-desc">Junction Box 技術文（<code>/en/technical-info/tech-junction_box.html</code>）月流量 177 次，一篇文章排上多個關鍵字，已充分驗證深度技術內容在這個產業有效。<br><br>然而，整個 Technical Information 區塊其他頁面（Solar PV、Wind Turbine、Automotive 等）都是圖片加短文，幾乎沒有帶來流量。建議將其他應用頁面也升級為 500 字以上的深度技術文，複製 Junction Box 頁面的成功模式。</div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="hc-item">
+        <div class="hc-icon green">✅</div>
+        <div>
+          <div class="hc-title">Certifications 頁面帶來跨語言自然流量</div>
+          <div class="hc-desc">UKCA 認證頁面的俄文版和阿拉伯文版各帶來 250 次以上月流量，排名第 2，代表有國際採購商在搜尋特定認證資訊。<br><br>這是目前多語言策略中效益最具體的例子，代表「認證內容 × 多語言」的組合對華偉這類 B2B 製造商特別有效，值得持續深化。</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div><!-- end main -->
+
+<!-- FOOTER -->
+<footer>
+  <strong>普飛國際行銷有限公司 Perfect International Marketing Corp.</strong><br>
+  407 台中市西屯區臺灣大道 3 段 660 號 5F-3<br>
+  Tel. 886-4-24517070　Fax. 886-4-24512280　E-mail: service@polaris.net.tw<br>
+  <a href="https://www.pufe.com.tw" target="_blank">www.pufe.com.tw</a><br><br>
+  <span style="font-size:11px;color:rgba(255,255,255,.35)">本報告數據來源：Ahrefs（2026.06.25）、Ahrefs 概述頁截圖、hwlok.com 現場爬取 — 普飛行銷 SEO/GEO 分析部門</span>
+</footer>
+
+<!-- CHART JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+// Traffic History Chart
+const ctx = document.getElementById('trafficChart').getContext('2d');
+const labels = ['2024-06','2024-07','2024-08','2024-09','2024-10','2024-11','2024-12','2025-01','2025-02','2025-03','2025-04','2025-05','2025-06','2025-07','2025-08','2025-09','2025-10','2025-11','2025-12','2026-01','2026-02','2026-03','2026-04','2026-05','2026-06'];
+const data = [2796,2474,2538,2440,2419,2506,2722,2970,2476,2507,2504,2451,2527,2738,2903,2628,2102,2232,2446,2640,2573,2439,1847,2486,4974];
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: labels,
+    datasets: [{
+      label: '月自然流量',
+      data: data,
+      borderColor: '#D41B2C',
+      backgroundColor: 'rgba(212,27,44,0.08)',
+      borderWidth: 2.5,
+      pointRadius: 3.5,
+      pointBackgroundColor: '#D41B2C',
+      pointBorderColor: '#fff',
+      pointBorderWidth: 2,
+      fill: true,
+      tension: 0.3
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        callbacks: {
+          label: ctx => `月流量：${ctx.parsed.y.toLocaleString()} 次`
+        }
+      },
+      annotation: {}
+    },
+    scales: {
+      x: {
+        grid: { color: 'rgba(0,0,0,0.04)' },
+        ticks: { font: { size: 10 }, maxRotation: 45, color: '#94a3b8' }
+      },
+      y: {
+        min: 0,
+        grid: { color: 'rgba(0,0,0,0.05)' },
+        ticks: {
+          font: { size: 11 },
+          color: '#94a3b8',
+          callback: v => v.toLocaleString()
+        }
+      }
+    }
+  }
+});
+
+// Intersection Observer for scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.hc-item, .comp-card, .metric-card, .kpi-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity .4s ease, transform .4s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
